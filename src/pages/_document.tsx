@@ -1,5 +1,6 @@
 import Document, { Head, Html, Main, NextScript } from 'next/document';
 
+import Navbar from '@/components/Navbar';
 import { AppConfig } from '@/utils/AppConfig';
 
 // Need to create a custom _document because i18n support is not compatible with `next export`.
@@ -9,7 +10,9 @@ class MyDocument extends Document {
     return (
       <Html lang={AppConfig.locale}>
         <Head />
+
         <body>
+          <Navbar />
           <Main />
           <NextScript />
         </body>
