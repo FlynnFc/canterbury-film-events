@@ -4,7 +4,7 @@ import React from 'react';
 interface InfoProps {
   color?: string;
   title: string;
-  description: string;
+  description?: string;
   buttonAction?: string;
 }
 
