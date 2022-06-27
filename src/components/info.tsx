@@ -1,14 +1,14 @@
 import type { FC } from 'react';
 import React from 'react';
 
-interface infoProps {
+interface InfoProps {
   color?: string;
   title: string;
   description: string;
   buttonAction?: string;
 }
 
-const Info: FC<infoProps> = ({
+const Info: FC<InfoProps> = ({
   color = 'green-500',
   title = 'Featured Events',
   description = 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo recusandae odio labore iure ex repellat? Ullam, adipisci rerum. Harum obcaecati eligendi magni expedita aut soluta illum aliquid sit magnam quam?',
