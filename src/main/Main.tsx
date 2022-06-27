@@ -8,7 +8,9 @@ type IMainProps = {
 const Main = (props: IMainProps) => (
   <div id="main" className="w-full space-y-6 bg-black px-1 antialiased">
     {props.meta}
-    <h1 className="mt-12 text-6xl font-medium text-green-500">All events</h1>
+    <h1 role="heading" className="mt-12 text-6xl font-medium text-green-500">
+      All events
+    </h1>
     <p className="text-white">
       Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nulla unde
       doloribus deleniti accusamus laboriosam consequuntur, mollitia provident

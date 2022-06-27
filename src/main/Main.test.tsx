@@ -7,9 +7,9 @@ describe('Main template', () => {
     it('should have 3 menu items', () => {
       render(<Main meta={null}>{null}</Main>);
 
-      const menuItemList = screen.getAllByRole('listitem');
+      const heading = screen.getByRole('heading');
 
-      expect(menuItemList).toHaveLength(3);
+      expect(heading).toBeInTheDocument();
     });
 
     it('should have a link to support creativedesignsguru.com', () => {
