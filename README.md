@@ -39,6 +39,22 @@ Key Features:
 
 <p align="right">(<a href="#top">back to top</a>)</p>
 
+## Planning
+
+### Resources
+
+A resource I like to use when planning pages is from Fireship.io. This flow chart makes the choice of SSR or CSR much easier to wrap my head around
+
+<img src="https://fireship.io/courses/react-next-firebase/img/next-ssr-flowchart.png" width="600" height="300" alt="Flow Chart">
+
+<br />
+
+### Design
+
+I then began designing the site and how I anticipate it to function. This includes the component trees, any get or post requests, authentification, styling and overall layout of the page 
+
+<img src="https://i.imgur.com/zN6jUsS.png" alt="Planning diagramt">
+
 ## Getting Started
 
 First, run the development server:
