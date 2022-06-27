@@ -31,8 +31,10 @@ Key Features:
 
 * [Next.js](https://nextjs.org/)
 * [React.js](https://reactjs.org/)
-
+* [TypeScript](https://www.typescriptlang.org/)
 * [Prisma](https://www.prisma.io/)
+* [Husky](https://typicode.github.io/husky/#/)
+* [Jest](https://jestjs.io/)
 
 
 <p align="right">(<a href="#top">back to top</a>)</p>
