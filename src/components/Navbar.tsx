@@ -3,24 +3,22 @@ import React from 'react';
 
 function Navbar() {
   return (
-    <nav className="flex bg-white">
-      <ul className=" top-0 flex w-full items-center justify-between bg-white p-4 text-xl text-black ">
+    <nav className="top-0 flex w-full bg-white shadow">
+      <ul
+        id="nav"
+        className=" top-0 flex w-full items-center justify-between bg-white p-4 text-xl text-white "
+      >
         <li className="space-x-4">
-          <Link rel="home" href={`/home`} key="home">
-            <a className="rounded bg-green-500 p-3 px-4 font-medium uppercase">
+          <Link rel="home" href={`/`} key="home">
+            <a className="rounded bg-black  p-3 px-4 font-medium uppercase">
               Home
-            </a>
-          </Link>
-          <Link href="#">
-            <a className="rounded p-3 px-4 font-medium uppercase outline outline-1 outline-green-500 hover:bg-green-500 hover:outline-none">
-              Tournements
             </a>
           </Link>
         </li>
 
         <li>
           <Link href="#">
-            <a className="w-full rounded bg-black p-3 px-4 font-medium uppercase text-white">
+            <a className="rounded bg-green-500 p-3 px-4 font-medium uppercase text-white">
               Sign in
             </a>
           </Link>
