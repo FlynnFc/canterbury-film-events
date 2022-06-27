@@ -9,7 +9,7 @@ const Index = () => {
         meta={
           <Meta
             title="Canterbury Film Events"
-            description="Next js Boilerplate is the perfect starter code for your project. Build your React application with the Next.js framework."
+            description="When we first start University we are often overwelmed by too many events, movie viewings, parties, and even small pop-up events. Luckily you have found the right place. Every event related to Film in Canterbury can be found here. Once your account is confirmed you will be able to create your own events and publish them here as well."
           />
         }
       >
@@ -17,10 +17,11 @@ const Index = () => {
       </Main>
       <div
         id="info-container"
-        className="mt-8 flex content-start items-center justify-evenly"
+        className="m-4 mt-8 flex flex-col content-start items-center justify-evenly space-y-4 lg:flex-row lg:space-y-0"
       >
-        <Info></Info>
-        <Info></Info>
+        <Info title="Create Account" description=""></Info>
+        <Info title="Featured Events" color="green-200"></Info>
+        <Info title="New Realeses" color="green-200"></Info>
       </div>
     </>
   );

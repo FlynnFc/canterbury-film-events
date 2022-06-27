@@ -9,12 +9,20 @@ type IMainProps = {
 };
 
 const Main: FC<IMainProps> = ({ meta }) => (
-  <div id="main" className="w-full space-y-6 bg-black px-1 antialiased">
+  <div
+    id="main"
+    className="flex w-full flex-col items-start justify-center space-y-12 bg-black px-1 antialiased lg:justify-center lg:space-y-12"
+  >
     {meta}
-    <h1 role="heading" className="mt-12 text-6xl font-medium text-green-500">
+    <h1
+      role="heading"
+      className="mt-2 text-3xl font-medium text-green-500 lg:text-6xl"
+    >
       {AppConfig.title}
     </h1>
-    <p className="text-white">{AppConfig.description}</p>
+    <p className="text-sm text-white md:text-sm lg:text-base">
+      {AppConfig.description}
+    </p>
     <Link href="./events">
       <button
         role="link"
