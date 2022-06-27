@@ -20,8 +20,8 @@ const Index = () => {
         className="m-4 mt-8 flex flex-col content-start items-center justify-evenly space-y-4 lg:flex-row lg:space-y-0"
       >
         <Info title="Create Account" description=""></Info>
-        <Info title="Featured Events" color="green-200"></Info>
-        <Info title="New Realeses" color="green-200"></Info>
+        <Info title="Featured Events" color="green-200" description=""></Info>
+        <Info title="New Realeses" color="green-200" description=""></Info>
       </div>
     </>
   );
