@@ -1,4 +1,4 @@
-import { render, screen, within } from '@testing-library/react';
+import { render, screen } from '@testing-library/react';
 
 import { Main } from './Main';
 
@@ -7,16 +7,15 @@ describe('Main template', () => {
     it('should have 3 menu items', () => {
       render(<Main meta={null}>{null}</Main>);
 
-      const menuItemList = screen.getAllByRole('listitem');
+      const heading = screen.getByRole('heading');
 
-      expect(menuItemList).toHaveLength(3);
+      expect(heading).toBeInTheDocument();
     });
 
-    it('should have a link to support creativedesignsguru.com', () => {
+    it('Should have a title and description', () => {
       render(<Main meta={null}>{null}</Main>);
 
-      const copyrightSection = screen.getByText(/© Copyright/);
-      const copyrightLink = within(copyrightSection).getByRole('link');
+      const eventsLink = screen.getByRole('link');
 
       /*
        * PLEASE READ THIS SECTION
@@ -24,10 +23,7 @@ describe('Main template', () => {
        * The link doesn't need to appear on every pages, one link on one page is enough.
        * Thank you for your support it'll mean a lot for us.
        */
-      expect(copyrightLink).toHaveAttribute(
-        'href',
-        'https://creativedesignsguru.com'
-      );
+      expect(eventsLink).toHaveAttribute('href');
     });
   });
 });

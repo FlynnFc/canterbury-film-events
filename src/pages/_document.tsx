@@ -1,4 +1,4 @@
-import Document, { Head, Html, Main, NextScript } from 'next/document';
+import Document, { Head, Html, NextScript } from 'next/document';
 
 import Navbar from '@/components/Navbar';
 import { AppConfig } from '@/utils/AppConfig';
@@ -9,11 +9,10 @@ class MyDocument extends Document {
   render() {
     return (
       <Html lang={AppConfig.locale}>
-        <Head />
+        <Head></Head>
 
-        <body>
+        <body className="bg-slate-200">
           <Navbar />
-          <Main />
           <NextScript />
         </body>
       </Html>

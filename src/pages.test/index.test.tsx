@@ -7,12 +7,12 @@ import Index from '@/pages/index';
 
 describe('Index page', () => {
   describe('Render method', () => {
-    it('should have h1 tag', () => {
+    it('should have nav tag', () => {
       render(<Index />);
 
-      const heading = screen.getByRole('heading');
+      const nav = screen.getByRole('nav');
 
-      expect(heading).toBeInTheDocument();
+      expect(nav).toBeInTheDocument();
     });
   });
 });

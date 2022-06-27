@@ -1,8 +1,6 @@
 @tailwind base;
 
-body {
-  padding: 1rem 10vw;
-  }
+
 
 @tailwind components;
 
@@ -14,4 +12,13 @@ body {
 
 .content ul {
   @apply my-6;
+}
+
+#nav {
+padding:1rem 10vw;
+}
+
+#main {
+padding:1rem 10vw;
+height: 50vh;
 }
