@@ -1,6 +1,6 @@
 import Info from '@/components/info';
 import { Meta } from '@/layouts/Meta';
-import { Main } from '@/templates/Main';
+import { Main } from '@/main/Main';
 
 const Index = () => {
   return (
@@ -8,7 +8,7 @@ const Index = () => {
       <Main
         meta={
           <Meta
-            title="Next.js Boilerplate Presentation"
+            title="Canterbury Film Events"
             description="Next js Boilerplate is the perfect starter code for your project. Build your React application with the Next.js framework."
           />
         }
@@ -17,7 +17,7 @@ const Index = () => {
       </Main>
       <div
         id="info-container"
-        className="mt-8 flex items-center justify-around"
+        className="mt-8 flex content-start items-center justify-evenly"
       >
         <Info></Info>
         <Info></Info>

@@ -1,25 +1,28 @@
-import type { ReactNode } from 'react';
+import Link from 'next/link';
+import type { FC, ReactNode } from 'react';
+
+import { AppConfig } from '@/utils/AppConfig';
 
 type IMainProps = {
   meta: ReactNode;
   children: ReactNode;
 };
 
-const Main = (props: IMainProps) => (
+const Main: FC<IMainProps> = ({ meta }) => (
   <div id="main" className="w-full space-y-6 bg-black px-1 antialiased">
-    {props.meta}
+    {meta}
     <h1 role="heading" className="mt-12 text-6xl font-medium text-green-500">
-      All events
+      {AppConfig.title}
     </h1>
-    <p className="text-white">
-      Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nulla unde
-      doloribus deleniti accusamus laboriosam consequuntur, mollitia provident
-      facilis sed iure distinctio exercitationem? Excepturi dolores quia omnis
-      quibusdam, deleniti corporis esse.
-    </p>
-    <button className="rounded bg-green-500 p-3 px-4 font-medium uppercase text-white">
-      Events
-    </button>
+    <p className="text-white">{AppConfig.description}</p>
+    <Link href="./events">
+      <button
+        role="link"
+        className="rounded bg-green-500 p-3 px-4 font-medium uppercase text-white"
+      >
+        Events
+      </button>
+    </Link>
   </div>
 );
 
