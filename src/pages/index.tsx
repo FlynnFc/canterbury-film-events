@@ -16,6 +16,7 @@ const Index = () => {
         {' '}
       </Main>
       <div
+        role="main-container"
         id="info-container"
         className="flex flex-col items-center justify-around space-x-0 text-xl 2xl:flex-row 2xl:items-stretch 2xl:space-x-6 "
       >

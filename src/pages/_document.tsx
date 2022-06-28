@@ -1,4 +1,4 @@
-import Document, { Head, Html, NextScript } from 'next/document';
+import Document, { Head, Html, Main, NextScript } from 'next/document';
 
 import Navbar from '@/components/Navbar';
 import { AppConfig } from '@/utils/AppConfig';
@@ -13,6 +13,7 @@ class MyDocument extends Document {
 
         <body className="bg-slate-100">
           <Navbar />
+          <Main></Main>
           <NextScript />
         </body>
       </Html>
