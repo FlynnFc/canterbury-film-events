@@ -17,19 +17,25 @@ const Index = () => {
       </Main>
       <div
         id="info-container"
-        className="m-4 mt-8 flex flex-col content-start items-center justify-evenly space-y-4 lg:flex-row lg:space-y-0"
+        className="flex flex-col items-center justify-around space-x-0 text-xl 2xl:flex-row 2xl:items-stretch 2xl:space-x-6 "
       >
-        <Info title="Create Account" description="cheeeese"></Info>
-        <Info
-          title="Featured Events"
-          color="green-200"
-          description="cheeeese"
-        ></Info>
-        <Info
-          title="New Realeses"
-          color="green-200"
-          description="cheeeese"
-        ></Info>
+        <div>
+          <Info
+            title="Create Account"
+            description="Do you want to create new events or rsvp for others? All you need to do is sign in"
+            buttonAction="Sign in"
+          ></Info>
+        </div>
+        <div>
+          <Info
+            event
+            wide
+            title="Featured Event"
+            color="white"
+            buttonAction="See More"
+            description="Find every event going on in Canterbury here. Dont miss out! Lorem ipsumLorem ipsumLorem ipsumLorem ipsumLorem ipsumLorem ipsumLorem ipsumLorem ipsum"
+          ></Info>
+        </div>
       </div>
     </>
   );

@@ -11,7 +11,7 @@ class MyDocument extends Document {
       <Html lang={AppConfig.locale}>
         <Head></Head>
 
-        <body className="bg-slate-200">
+        <body className="bg-slate-100">
           <Navbar />
           <NextScript />
         </body>

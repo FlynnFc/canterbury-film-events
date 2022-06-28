@@ -14,11 +14,12 @@
   @apply my-6;
 }
 
-#nav {
+#nav, #info-container  {
 padding:1rem 10vw;
 }
 
-#main {
+#main{
 padding:1rem 10vw;
-height: 50vh;
+height: 40vh;
 }
+
