@@ -11,11 +11,17 @@
     "clean": "rimraf .next out",
     "lint": "next lint",
     "check-types": "tsc --noEmit --pretty",
-    "test": "jest --watch",
-    "prepare": "husky install"
+    "test": "jest --watch"
   },
   "dependencies": {
+    "@date-io/date-fns": "^2.14.0",
+    "@emotion/react": "^11.9.3",
+    "@emotion/styled": "^11.9.3",
     "@headlessui/react": "^1.6.5",
+    "@mui/lab": "^5.0.0-alpha.88",
+    "@mui/material": "^5.8.6",
+    "@mui/x-date-pickers": "^5.0.0-alpha.7",
+    "date-fns": "^2.28.0",
     "next": "^12.1.6",
     "next-seo": "^5.4.0",
     "react": "^18.1.0",
@@ -52,7 +58,6 @@
     "eslint-plugin-tailwindcss": "^3.5.0",
     "eslint-plugin-testing-library": "^5.5.1",
     "eslint-plugin-unused-imports": "^2.0.0",
-    "husky": "^8.0.1",
     "jest": "^28.1.0",
     "jest-environment-jsdom": "^28.1.0",
     "lint-staged": "^12.5.0",

@@ -6,13 +6,11 @@ import Index from '@/pages/index';
 // The mock has been moved to `__mocks__` folder to avoid duplication
 
 describe('Index page', () => {
-  describe('Render method', () => {
-    it('should have nav tag', () => {
-      render(<Index />);
+  it('should have a main-container', () => {
+    render(<Index />);
 
-      const nav = screen.getByRole('nav');
+    const container = screen.getByRole('main-container');
 
-      expect(nav).toBeInTheDocument();
-    });
+    expect(container).toBeInTheDocument();
   });
 });
