@@ -17,9 +17,8 @@ class MyDocument extends Document {
             rel="stylesheet"
           />
         </Head>
-
-        <body className="bg-slate-100">
-          <Navbar />
+        <Navbar />
+        <body className="flex h-screen items-center justify-center bg-slate-100">
           <Main></Main>
           <NextScript />
         </body>

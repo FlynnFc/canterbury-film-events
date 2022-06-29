@@ -3,7 +3,7 @@ import React from 'react';
 
 function Navbar() {
   return (
-    <nav role="nav" className="top-0 flex w-full bg-white shadow">
+    <nav role="nav" className="fixed top-0 flex w-full bg-white shadow">
       <ul
         id="nav"
         className=" top-0 flex w-full items-center justify-between bg-white p-4 text-xl text-white "
