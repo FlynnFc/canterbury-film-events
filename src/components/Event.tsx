@@ -1,3 +1,4 @@
+import Link from 'next/link';
 import type { FC } from 'react';
 import React from 'react';
 
@@ -7,13 +8,26 @@ interface EventProps {
 }
 
 const Event: FC<EventProps> = ({ title, description }) => {
+  const titleHander = (input: string) => {
+    return input.split(' ').join('-');
+  };
+
   return (
-    <div className="flex w-full flex-col items-center rounded border-2 border-black bg-green-500 p-6 md:items-start">
-      <div>
-        <h3 className="text-3xl">{title}</h3>
+    <div className="flex w-full flex-col items-center space-y-4 rounded border-2 border-black bg-green-500 p-6 sm:space-y-0 md:items-start">
+      <div className="flex w-full flex-col justify-between sm:flex-row">
+        <h3 className="text-center text-3xl font-medium sm:text-left">
+          {title}
+        </h3>
+        <Link href={`events/${titleHander(title)}`}>
+          <button className="rounded border-2 border-black p-3  px-4 font-medium text-black hover:bg-black hover:text-white">
+            See more
+          </button>
+        </Link>
       </div>
-      <span>30/11/2022</span>
-      <p className="hidden text-black sm:inline">{description}</p>
+      <div className="flex h-auto w-auto flex-col">
+        <span>30/11/2022</span>
+        <p className="hidden text-black sm:inline">{description}</p>
+      </div>
     </div>
   );
 };

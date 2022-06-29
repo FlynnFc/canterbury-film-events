@@ -39,9 +39,11 @@ const Info: FC<InfoProps> = ({
       ) : (
         <p className="text-sm lg:text-lg">{description}</p>
       )}
-      <button className="rounded bg-black p-3 px-5 font-medium uppercase text-white">
-        {buttonAction}
-      </button>
+      {!event ? (
+        <button className="rounded bg-black p-3 px-5 font-medium uppercase text-white">
+          {buttonAction}
+        </button>
+      ) : null}
     </div>
   );
 };

@@ -1,15 +1,14 @@
-import React from 'react';
+import React, { useState } from 'react';
 
 const Eventid = () => {
-  const userIsGoing = true;
-  // const [userIsGoing, setUserIsGoing] = useState<boolean>(false);
+  const [userIsGoing, setUserIsGoing] = useState<boolean>(false);
 
   const buttonHandler = () => {
-    // setUserIsGoing((userIsGoing) => !userIsGoing);
+    setUserIsGoing((userIsGoing) => !userIsGoing);
   };
 
   return (
-    <div className="m-auto flex max-w-2xl flex-col justify-center space-y-6 rounded-2xl bg-white p-10">
+    <div className="m-auto my-4 flex max-w-2xl flex-col justify-center space-y-6 rounded-2xl bg-white p-10">
       <div className="flex flex-col">
         <div className="flex flex-row justify-between">
           <h1 className="text-4xl font-semibold underline decoration-green-500 decoration-4 underline-offset-4">

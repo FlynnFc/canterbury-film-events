@@ -13,8 +13,8 @@ const Create = () => {
   };
 
   return (
-    <section className="flex h-screen items-center justify-center">
-      <div className="mx-auto mt-4 flex max-w-2xl flex-col rounded-2xl bg-white p-10">
+    <section className="flex items-center justify-center">
+      <div className="mx-4 mt-4 flex max-w-2xl flex-col rounded-2xl bg-white p-10 md:mx-auto">
         <div className="mb-10 space-y-2">
           <h1 className="text-2xl font-semibold">Creating a new event</h1>
           <p className="text-slate-400">
