@@ -6,7 +6,7 @@ function Navbar() {
     <nav role="nav" className="fixed top-0 flex w-full bg-white shadow">
       <ul
         id="nav"
-        className=" top-0 flex w-full items-center justify-between bg-white p-4 text-xl text-white "
+        className=" top-0 m-2 flex w-full items-center justify-between bg-white p-4 text-xl text-white "
       >
         <li className="space-x-4">
           <Link rel="home" href={`/`} key="home">
