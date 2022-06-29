@@ -14,7 +14,7 @@ const Create = () => {
         </p>
       </div>{' '}
       <form
-        action={`/${currentTitle}`}
+        action={`events/${currentTitle}`}
         method="post"
         className="flex flex-col space-y-2"
       >
