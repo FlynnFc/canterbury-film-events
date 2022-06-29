@@ -4,6 +4,7 @@ const Eventid = () => {
   const [userIsGoing, setUserIsGoing] = useState<boolean>(false);
 
   const buttonHandler = () => {
+    // eslint-disable-next-line @typescript-eslint/no-shadow
     setUserIsGoing((userIsGoing) => !userIsGoing);
   };
 
@@ -20,7 +21,7 @@ const Eventid = () => {
             alt="logo"
           />
         </div>
-        <h3 className="text-md">{new Date().toString()}</h3>
+        <h3 className="text-base">{new Date().toString()}</h3>
       </div>
       <div>
         <p>
