@@ -24,8 +24,8 @@ const Info: FC<InfoProps> = ({
     <div
       className={`${
         !wide
-          ? `2xl:max-w-md hidden 2xl:flex lg:visible w-full flex-col justify-around items-start rounded border-2 border-black bg-${color} p-8 text-black shadow-lg lg:m-4 w-full h-full`
-          : `space-y-4 flex flex-col justify-around item-center md:items-start rounded border-2 border-black bg-${color} p-8 text-black shadow-lg lg:m-4 w-full h-full`
+          ? `2xl:max-w-md hidden 2xl:flex lg:visible w-full flex-col justify-around items-start rounded border-2 border-black bg-${color} p-8 text-black shadow-lg lg:my-4 w-full h-full`
+          : `space-y-4 flex flex-col justify-around item-center md:items-start rounded border-2 border-black bg-${color} p-8 text-black shadow-lg lg:my-4 w-full h-full`
       } `}
     >
       <div>
