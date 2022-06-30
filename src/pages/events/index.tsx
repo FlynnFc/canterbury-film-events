@@ -17,18 +17,19 @@ const Events = () => {
             </button>
           </Link>
         </div>
+        <p></p>
         <div className="space-y-8">
           <Event
-            title="Top Gun"
-            description="you should not need thisyou should not need thisyou should not need thisyou should not need thisyou should not need thisyou should not need this"
+            title="Top Gun Marathon"
+            description="Lorem ipsum, dolor sit amet consectetur adipisicing elit. Magni autem fugit eveniet hic id placeat cupiditate doloribus reprehenderit accusamus in? Eius molestiae placeat non aspernatur sed adipisci eveniet quis omnis."
           ></Event>
           <Event
-            title="Test Event"
-            description="you should not need thisyou should not need thisyou should not need thisyou should not need thisyou should not need thisyou should not need this"
+            title="90's Film Dress-up Party"
+            description="Lorem ipsum, dolor sit amet consectetur adipisicing elit. Magni autem fugit eveniet hic id placeat cupiditate doloribus reprehenderit accusamus in? Eius molestiae placeat non aspernatur sed adipisci eveniet quis omnis."
           ></Event>
           <Event
-            title="Test Event"
-            description="you should not need thisyou should not need thisyou should not need thisyou should not need thisyou should not need thisyou should not need this"
+            title="Film Society Pub Quiz"
+            description="Lorem ipsum, dolor sit amet consectetur adipisicing elit. Magni autem fugit eveniet hic id placeat cupiditate doloribus reprehenderit accusamus in? Eius molestiae placeat non aspernatur sed adipisci eveniet quis omnis."
           ></Event>
         </div>
       </div>
