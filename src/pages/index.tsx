@@ -22,9 +22,9 @@ const Index = () => {
       >
         <div>
           <Info
-            title="Recent Releases"
-            description="Check out all recent film releases"
-            buttonAction="Check it out"
+            title="Create Account"
+            description="Do you want to create new events or rsvp for others? All you need to do is sign in"
+            buttonAction="Sign in"
           ></Info>
         </div>
         <div>
