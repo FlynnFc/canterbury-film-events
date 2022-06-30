@@ -30,11 +30,12 @@ const Info: FC<InfoProps> = ({
     >
       <div>
         <h3 className="text-3xl">{title}</h3>
+        <p></p>
       </div>
       {event ? (
         <Event
           title="Test Event"
-          description="you should not need thisyou should not need thisyou should not need thisyou should not need thisyou should not need thisyou should not need this"
+          description="Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem, soluta in placeat quo aliquam officia, eius quam temporibus molestiae ducimus, optio magnam. Dolore quisquam inventore deserunt voluptatem animi corporis eligendi."
         ></Event>
       ) : (
         <p className="text-sm lg:text-lg">{description}</p>
