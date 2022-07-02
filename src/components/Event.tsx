@@ -5,15 +5,16 @@ import React from 'react';
 interface EventProps {
   title: string;
   description?: string;
+  date?: string;
 }
 
-const Event: FC<EventProps> = ({ title, description }) => {
+const Event: FC<EventProps> = ({ title, description, date }) => {
   const titleHander = (input: string) => {
     return input.split(' ').join('-');
   };
 
   return (
-    <div className="flex w-full flex-col items-center space-y-4 rounded border-2 border-black bg-green-500 p-6 sm:space-y-0 md:items-start">
+    <div className="flex w-full flex-col items-center space-y-4 rounded border-2 border-black bg-green-500 p-6 sm:space-y-0 md:items-stretch">
       <div className="flex w-full flex-col justify-between sm:flex-row">
         <h3 className="text-center text-3xl font-medium sm:text-left">
           {title}
@@ -25,7 +26,7 @@ const Event: FC<EventProps> = ({ title, description }) => {
         </Link>
       </div>
       <div className="flex h-auto w-auto flex-col">
-        <span>30/11/2022</span>
+        <span>{date}</span>
         <p className="hidden text-black sm:inline">{description}</p>
       </div>
     </div>

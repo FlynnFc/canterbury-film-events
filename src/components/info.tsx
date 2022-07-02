@@ -34,8 +34,8 @@ const Info: FC<InfoProps> = ({
       </div>
       {event ? (
         <Event
-          title="Test Event"
-          description="Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem, soluta in placeat quo aliquam officia, eius quam temporibus molestiae ducimus, optio magnam. Dolore quisquam inventore deserunt voluptatem animi corporis eligendi."
+          title="Top Gun Marathon"
+          description="Lorem ipsum, dolor sit amet consectetur adipisicing elit. Magni autem fugit eveniet hic id placeat cupiditate doloribus reprehenderit accusamus in? Eius molestiae placeat non aspernatur sed adipisci eveniet quis omnis."
         ></Event>
       ) : (
         <p className="text-sm lg:text-lg">{description}</p>
