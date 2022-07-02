@@ -1,3 +1,4 @@
+import Link from 'next/link';
 import type { FC } from 'react';
 import React from 'react';
 
@@ -18,7 +19,6 @@ const Info: FC<InfoProps> = ({
   color = 'green-500',
   title = 'Featured Events',
   description = 'Lorem ipsum  dolor sit amet consectetur adipisicing elit. Explicabo recusandae odio labore iure ex repellat? Ullam, adipisci rerum. Harum obcaecati eligendi magni expedita aut soluta illum aliquid sit magnam quam?',
-  buttonAction = 'Read More',
 }) => {
   return (
     <div
@@ -34,16 +34,19 @@ const Info: FC<InfoProps> = ({
       </div>
       {event ? (
         <Event
+          date="10/07/2022"
           title="Top Gun Marathon"
-          description="Lorem ipsum, dolor sit amet consectetur adipisicing elit. Magni autem fugit eveniet hic id placeat cupiditate doloribus reprehenderit accusamus in? Eius molestiae placeat non aspernatur sed adipisci eveniet quis omnis."
+          description="Want to experience the new Top Gun film with a fresh memory of the original? On the 10th of July We are holding a back to back Top Gun marathon screening at the Gulbenkian."
         ></Event>
       ) : (
         <p className="text-sm lg:text-lg">{description}</p>
       )}
       {!event ? (
-        <button className="rounded bg-black p-3 px-5 font-medium uppercase text-white">
-          {buttonAction}
-        </button>
+        <Link rel="sign-in" href={`/sign-in`} key="signIn">
+          <a className="rounded bg-black p-3 px-5 font-medium uppercase text-white">
+            Sign in
+          </a>
+        </Link>
       ) : null}
     </div>
   );
