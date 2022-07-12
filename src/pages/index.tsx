@@ -9,7 +9,7 @@ const Index = () => {
         meta={
           <Meta
             title="Canterbury Film Events"
-            description="When we first start University we are often overwelmed by too many events, movie viewings, parties, and even small pop-up events. Luckily you have found the right place. Every event related to Film in Canterbury can be found here. Once your account is confirmed you will be able to create your own events and publish them here as well."
+            description="When we first start University, we are often overwelmed by too many events, movie viewings, parties, and even small pop-up events. Luckily you have found the right place. Every event related to Film in Canterbury can be found here. Once your account is confirmed you will be able to create your own events and publish them here as well."
           />
         }
       >
@@ -23,7 +23,7 @@ const Index = () => {
         <div>
           <Info
             title="Create Account"
-            description="Do you want to create new events or rsvp for others? All you need to do is sign in"
+            description="Do you want to create new events or RSVP for others? All you need to do is sign in."
             buttonAction="Sign in"
           ></Info>
         </div>

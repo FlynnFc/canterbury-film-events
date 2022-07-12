@@ -44,10 +44,10 @@ const Eventid = () => {
         </button>
       </div>
       <div className="flex justify-evenly">
-        <span>Insta</span>
-        <span>facebook</span>
+        <span>Instagram</span>
+        <span>Facebook</span>
         <span>website</span>
-        <span>twitter</span>
+        <span>Twitter</span>
       </div>
     </div>
   );
