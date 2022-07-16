@@ -32,7 +32,7 @@ const Create = () => {
           <form
             action={`${currentTitle}`}
             method="post"
-            className="flex flex-col space-y-2"
+            className="flex flex-col space-y-4"
           >
             <label htmlFor="title" className="text-xl font-medium">
               Event Title
