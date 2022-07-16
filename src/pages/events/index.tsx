@@ -39,6 +39,11 @@ const Events = () => {
             title="Film Society Pub Quiz"
             description="For Studnets that have stayed near/in Canterbury over the summer, there is a small Pub Quiz night on Sunday the 21st of August. The questions will range from films in the silet era all the way to modern day."
           ></Event>
+          <div className="flex justify-center">
+            <button className="rounded bg-gray-300 p-3 px-4 font-medium uppercase hover:bg-gray-600">
+              Load more
+            </button>
+          </div>
         </div>
       </div>
     </section>
