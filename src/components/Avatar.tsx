@@ -3,16 +3,14 @@ import React from 'react';
 
 interface Props {
   imgsource: string;
-  firstname: string;
+  firstname?: string;
   age?: number;
 }
 
 export const Avatar: FC<Props> = ({ imgsource, firstname }) => {
   return (
-    <div>
-      This is a profile picture
-      <h1>{firstname}</h1>
-      <img alt="Profile picture" src={imgsource} />
+    <div className="h-12 w-12 rounded-full bg-black">
+      <img alt="" src={imgsource} />
     </div>
   );
 };

@@ -1,11 +1,21 @@
 import Link from 'next/link';
 import React from 'react';
+import toast, { Toaster } from 'react-hot-toast';
 
 import Event from '@/components/Event';
 
 const Events = () => {
+  const loadHandler = () => {
+    toast.loading('Finding new more events');
+    setTimeout(() => {
+      toast.remove();
+      toast.error('Could not find any other events');
+    }, 2000);
+  };
+
   return (
     <section className="items-center justify-center">
+      <Toaster />
       <div className=" mx-4 mt-4 flex max-w-6xl flex-col  justify-between rounded-2xl bg-white p-10 md:mx-auto">
         <div className="my-4 flex flex-row justify-between">
           <h1 className="text-2xl font-semibold text-black lg:text-4xl ">
@@ -40,7 +50,10 @@ const Events = () => {
             description="For Studnets that have stayed near/in Canterbury over the summer, there is a small Pub Quiz night on Sunday the 21st of August. The questions will range from films in the silet era all the way to modern day."
           ></Event>
           <div className="flex justify-center">
-            <button className="rounded bg-gray-300 p-3 px-4 font-medium uppercase hover:bg-gray-600">
+            <button
+              onClick={() => loadHandler()}
+              className="rounded bg-gray-300 p-3 px-4 font-medium uppercase hover:bg-gray-600"
+            >
               Load more
             </button>
           </div>

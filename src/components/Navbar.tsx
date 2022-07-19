@@ -1,7 +1,10 @@
+import { Avatar } from '@mui/material';
 import Link from 'next/link';
 import React from 'react';
 
 function Navbar() {
+  const isSignedIn = false;
+
   return (
     <nav role="nav" className="top-0 flex w-full bg-white  shadow ">
       <ul
@@ -17,11 +20,15 @@ function Navbar() {
         </li>
 
         <li>
-          <Link rel="sign-in" href={`/sign-in`} key="signIn">
-            <a className="rounded bg-green-500 p-3 px-4 font-medium uppercase text-white">
-              Sign in
-            </a>
-          </Link>
+          {!isSignedIn ? (
+            <Link rel="sign-in" href={`/sign-in`} key="signIn">
+              <a className="rounded bg-green-500 p-3 px-4 font-medium uppercase text-white">
+                Sign in
+              </a>
+            </Link>
+          ) : (
+            <Avatar />
+          )}
         </li>
       </ul>
     </nav>

@@ -7,7 +7,7 @@ import { SignInCheck } from '@/components/SignInCheck';
 const Create = () => {
   const [currentTitle, setCurrentTitle] = useState('');
   // const [formResults, setFormResults] = useState({});
-  const [isSignedIn, SetIsSignedIn] = useState(true);
+  const [isSignedIn, SetIsSignedIn] = useState(false);
 
   const titleHander = (e: ChangeEvent<HTMLInputElement>) => {
     const val = e.target.value;

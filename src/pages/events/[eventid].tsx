@@ -1,3 +1,4 @@
+import { Avatar } from '@mui/material';
 import React, { useState } from 'react';
 
 const Eventid = () => {
@@ -15,11 +16,7 @@ const Eventid = () => {
           <h1 className="text-4xl font-semibold underline decoration-green-500 decoration-4 underline-offset-4">
             Event Title
           </h1>
-          <img
-            className="h-20 w-20"
-            src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/1.png"
-            alt="logo"
-          />
+          <Avatar />
         </div>
         <h3 className="text-base">{new Date().toString()}</h3>
       </div>
