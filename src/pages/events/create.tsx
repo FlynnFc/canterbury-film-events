@@ -95,6 +95,7 @@ const Create = () => {
               </div>
             </div>
             <button
+              onClick={() => SetIsSignedIn(true)}
               type="submit"
               className="rounded-lg border-2 border-black bg-green-500 p-2"
             >
