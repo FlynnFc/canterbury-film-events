@@ -21,7 +21,7 @@ const Event: FC<EventProps> = ({ title, description, date }) => {
         </h3>
         <Link href={`events/${titleHander(title)}`}>
           <button className="rounded border-2 border-black p-3  px-4 font-medium text-black hover:bg-black hover:text-white">
-            See more
+            Details
           </button>
         </Link>
       </div>
